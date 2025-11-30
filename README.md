@@ -8,7 +8,7 @@ Portofolio website yang menampilkan profil, keahlian, project, dan sertifikat sa
 - **Responsive Design** (Bootstrap / Tailwind)
 - Halaman: About, Skills, Projects, Certificates, Contact
 - Animasi interaktif dan smooth scrolling
-- Link ke GitHub Projects & Credly Certificates
+- Link ke GitHub Projects & Credly Badge
 
 ---
 
