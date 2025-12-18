@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html
-  lang="id"
-  class="scroll-smooth"
->
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>Sony Septian – Portfolio</title>
+    <title>Sony Septian | Cyber Portfolio</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -23,6 +20,7 @@
       href="https://unpkg.com/aos@2.3.1/dist/aos.css"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="style.css"
@@ -32,19 +30,21 @@
   <body
     data-bs-spy="scroll"
     data-bs-target="#navbar"
+    tabindex="0"
   >
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg fixed-top glass"
+      class="navbar navbar-expand-lg fixed-top navbar-glass"
     >
       <div class="container">
         <a
           class="navbar-brand fw-bold text-white"
           href="#home"
-          >Sony Septian</a
         >
+          <i class="bi bi-cpu-fill me-2 text-info"></i>Sony Septian
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbar-dark"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -55,7 +55,7 @@
           class="collapse navbar-collapse"
           id="navbarNav"
         >
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto gap-3">
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -74,14 +74,14 @@
               <a
                 class="nav-link"
                 href="#badge"
-                >Badge</a
+                >Badges</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
                 href="#certificate"
-                >Certificate</a
+                >Certificates</a
               >
             </li>
             <li class="nav-item">
@@ -98,29 +98,47 @@
 
     <section
       id="home"
-      class="hero d-flex align-items-center text-center text-white"
+      class="hero-section"
     >
-      <div
-        class="container"
-        data-aos="fade-up"
-      >
-        <img
-          src="img/profile-1.jpg"
-          alt="Sony Septian"
-          class="avatar mb-4"
-        />
-        <h1 class="display-3 fw-bold text">Sony Septian</h1>
-        <p class="lead mb-4">CCNA Certified · Computer Science · Manchester United Fans</p>
-        <a
-          href="#badge"
-          class="btn btn-outline-light btn-lg px-4"
-          >My Badges</a
-        >
-        <a
-          href="#certificate"
-          class="btn btn-outline-light btn-lg px-4"
-          >My Certificate</a
-        >
+      <div class="container">
+        <div class="row align-items-center flex-lg-row-reverse">
+          <div
+            class="col-lg-6 mb-5 mb-lg-0"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <div class="spline-container">
+              <iframe
+                src="https://my.spline.design/genkubgreetingrobot-BB9tYgBYwu3AAFz5zxghClhg/"
+                frameborder="0"
+              >
+              </iframe>
+            </div>
+            <p class="text-center text-secondary small mt-2 blink-text"><i class="bi bi-mouse me-1"></i> Spin the character with your mouse!</p>
+          </div>
+
+          <div
+            class="col-lg-6 text-center text-lg-start"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h1 class="display-3 hero-title mb-3">Sony Septian</h1>
+            <p class="hero-subtitle mb-4"><span class="text-info">CCNA Certified</span> &bull; Computer Science &bull; Full Stack Developer</p>
+            <p class="lead text-light mb-5 opacity-75">Passionate about learning and creating technology that makes life easier.</p>
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+              <a
+                href="#certificate"
+                class="btn btn-primary btn-lg rounded-pill px-4 shadow-lg"
+                >View Certificates</a
+              >
+              <a
+                href="#contact"
+                class="btn btn-neon btn-lg rounded-pill px-4"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -132,20 +150,32 @@
         class="container"
         data-aos="fade-up"
       >
+        <div class="text-center mb-5">
+          <h2 class="section-title text-white">About Me</h2>
+        </div>
+
         <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="fw-bold mb-4">About Me</h2>
+          <div class="col-lg-10">
+            <div class="glass-card p-4 p-md-5">
+              <div class="row align-items-center">
+                <div class="col-md-12 text-light">
+                  <p class="mb-4 lh-lg text-justify">
+                    Hello! I am an enthusiastic Information Technology student at <strong>IDE LPKIA</strong>. I have a deep interest in modern web development, data management, and network infrastructure. To me, technology is not just about
+                    writing code, but a powerful tool to solve real-world problems and improve daily efficiency.
+                  </p>
 
-            <p class="fs-5">An enthusiastic Information Technology student at IDE LPKIA, focusing on Web Development, Data Management, and System Administration.</p>
+                  <p class="mb-4 lh-lg text-justify">
+                    I have professional experience as a <strong>Web Developer Intern</strong> at PT Solusi Agronusa Pratama. There, I was responsible for developing an employee attendance system integrated with selfie-based authentication
+                    and geolocation. This experience honed my ability to translate business requirements into functional and reliable application features.
+                  </p>
 
-            <p class="fs-5">
-              I have internship experience as a Web Developer Intern at PT Solusi Agronusa Pratama, where I developed an attendance system using selfie-based photo authentication and geolocation. Supported by certifications such as CCNA
-              (Introduction to Networks & Enterprise Networking, Security, and Automation), Oracle Java Programming, and IT Essentials.
-            </p>
-
-            <p class="fs-5">
-              I possess strong knowledge of computer networks, device troubleshooting, and IT infrastructure fundamentals. I am committed to continuous learning and ready to contribute as a Web Developer or IT Support Specialist.
-            </p>
+                  <p class="mb-0 lh-lg text-justify">
+                    To support my professional growth, I have equipped myself with various industry certifications, including <strong>CCNA</strong> (Networking & Security), Oracle Java Programming, and IT Essentials. I am a lifelong learner
+                    ready to contribute to a team, both as a competent Web Developer and IT Support Specialist.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,79 +183,94 @@
 
     <section
       id="badge"
-      class="py-5 bg-light"
+      class="py-5"
     >
       <div
         class="container"
         data-aos="fade-up"
       >
-        <h2 class="text-center fw-bold mb-5">Badge</h2>
+        <div class="text-center mb-5">
+          <h2 class="section-title text-white">My Badges</h2>
+        </div>
+
         <div class="row g-4 justify-content-center">
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/5b0f1a42-6307-4062-bfa2-19540d783b0c/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge1.png"
-                class="badge-img"
-                alt="Badge 1"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="https://www.credly.com/badges/5b0f1a42-6307-4062-bfa2-19540d783b0c/public_url"
+                target="_blank"
+              >
+                <img
+                  src="img/badge1.png"
+                  alt="Badge CCNA"
+                />
+              </a>
+            </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/abcff7eb-1ebe-4e84-b2b6-012fb925107b/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge2.png"
-                class="badge-img"
-                alt="Badge 2"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="https://www.credly.com/badges/abcff7eb-1ebe-4e84-b2b6-012fb925107b/public_url"
+                target="_blank"
+              >
+                <img
+                  src="img/badge2.png"
+                  alt="Badge Network"
+                />
+              </a>
+            </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/4096ce93-c496-4b9f-98fa-e430c41f1f5a/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge3.png"
-                class="badge-img"
-                alt="Badge 3"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="https://www.credly.com/badges/4096ce93-c496-4b9f-98fa-e430c41f1f5a/public_url"
+                target="_blank"
+              >
+                <img
+                  src="img/badge3.png"
+                  alt="Badge Java"
+                />
+              </a>
+            </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/b4e59c5c-6e21-4c76-acfa-5c7843fa814a/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge4.png"
-                class="badge-img"
-                alt="Badge 4"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="img/badge4.png"
+                  alt="Badge IT Essentials"
+                />
+              </a>
+            </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/3e988dd7-360d-43ef-82d1-ae6810b98ba5/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge5.png"
-                class="badge-img"
-                alt="Badge 5"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="img/badge5.png"
+                  alt="Badge Cyber"
+                />
+              </a>
+            </div>
           </div>
-          <div class="col-6 col-sm-4 col-md-2">
-            <a
-              href="https://www.credly.com/badges/bb8233cf-dd91-46fa-8316-a55441d312b2/public_url"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/badge6.png"
-                class="badge-img"
-                alt="Badge 6"
-            /></a>
+          <div class="col-6 col-sm-4 col-md-2 badge-item">
+            <div class="glass-card p-3 d-flex align-items-center justify-content-center h-100">
+              <a
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="img/badge6.png"
+                  alt="Badge Security"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -239,101 +284,208 @@
         class="container"
         data-aos="fade-up"
       >
-        <h2 class="text-center fw-bold mb-5">Certificate</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4">
-            <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate1.jpg"
-            >
-              <img
-                src="img/certificate1.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 1"
-              />
-            </a>
+        <div class="text-center mb-5">
+          <h2 class="section-title text-white">Certificates</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate1.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate1.jpg"
+                    class="cert-img"
+                    alt="Certificate 1"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">IT Essentials: PC Hardware and Software</h6>
+                  <small class="text-info">Cisco Networking Academy</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate2.jpg"
-            >
-              <img
-                src="img/certificate2.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 2"
-              />
-            </a>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate2.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate2.jpg"
+                    class="cert-img"
+                    alt="Certificate 2"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">CCNA: Intro to Networks</h6>
+                  <small class="text-info">Cisco Networking Academy</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate3.jpg"
-            >
-              <img
-                src="img/certificate3.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 3"
-              />
-            </a>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate3.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate3.jpg"
+                    class="cert-img"
+                    alt="Certificate 3"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">CCNA: Switching, routing, and wireless Essentials</h6>
+                  <small class="text-info">Cisco Networking Academy</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate4.jpg"
-            >
-              <img
-                src="img/certificate4.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 4"
-              />
-            </a>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate4.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate4.jpg"
+                    class="cert-img"
+                    alt="Certificate 4"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">CCNA: Enterprise Networking, security, and automation</h6>
+                  <small class="text-info">Cisco Networking Academy</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
-            <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate6.jpg"
-            >
-              <img
-                src="img/certificate6.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 6"
-              />
-            </a>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate5.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate5.jpg"
+                    class="cert-img"
+                    alt="Certificate 5"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">Ethical Hacking</h6>
+                  <small class="text-info">Cisco Networking Academy</small>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="glass-card p-2 h-100 cert-hover">
+              <a
+                href="#"
+                class="certificate-link text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#certModal"
+                data-img-src="img/certificate6.jpg"
+              >
+                <div class="overflow-hidden rounded-top">
+                  <img
+                    src="img/certificate6.jpg"
+                    class="cert-img"
+                    alt="Certificate 6"
+                  />
+                </div>
+                <div class="p-3 text-white">
+                  <h6 class="mb-1 fw-bold">Java Programming</h6>
+                  <small class="text-info">Oracle Academy</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="py-5"
+    >
+      <div
+        class="container"
+        data-aos="fade-up"
+      >
+        <div
+          class="glass-card py-5 px-4 text-center mx-auto"
+          style="max-width: 800px"
+        >
+          <h2 class="section-title text-white mb-4">Get In Touch</h2>
+          <p class="mb-5 text-light opacity-75">
+            Do you have an interesting project or want to discuss? <br />
+            Feel free to connect with me through the platforms below.
+          </p>
+
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
             <a
-              href="#"
-              class="certificate-link"
-              data-bs-toggle="modal"
-              data-bs-target="#certModal"
-              data-img-src="img/certificate5.jpg"
+              href="mailto:sonyseptian1711@gmail.com"
+              class="social-icon"
+              title="Email"
             >
-              <img
-                src="img/certificate5.jpg"
-                class="img-fluid rounded shadow"
-                alt="Certificate 5"
-              />
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/sony-septian"
+              class="social-icon"
+              title="LinkedIn"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/septians_17"
+              class="social-icon"
+              title="Instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://github.com/shosst17"
+              class="social-icon"
+              title="GitHub"
+            >
+              <i class="bi bi-github"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="text-center py-4 border-top border-secondary bg-black">
+      <small class="text-secondary"> &copy; <span id="year"></span> Sony Septian. Designed with <i class="bi bi-heart-fill text-danger"></i> </small>
+    </footer>
 
     <div
       class="modal fade"
@@ -343,95 +495,37 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content bg-transparent border-0">
-          <button
-            type="button"
-            class="btn-close btn-close-white ms-auto me-2 mt-2"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-          <img
-            id="certModalImg"
-            src=""
-            class="img-fluid rounded shadow"
-            alt="Certificate Preview"
-          />
+          <div class="modal-body p-0 position-relative">
+            <button
+              type="button"
+              class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3 bg-dark p-2 rounded-circle"
+              data-bs-dismiss="modal"
+            ></button>
+            <img
+              id="certModalImg"
+              src=""
+              class="img-fluid rounded shadow-lg w-100"
+              style="border: 2px solid var(--neon-blue)"
+              alt="Certificate Full"
+            />
+          </div>
         </div>
       </div>
     </div>
 
-    <section
-      id="contact"
-      class="py-5 bg-dark text-white"
-    >
-      <div
-        class="container text-center"
-        data-aos="fade-up"
-      >
-        <h2 class="fw-bold mb-4">Get In Touch</h2>
-        <p class="mb-4">You can reach me through the platforms below</p>
-        <div class="d-flex justify-content-center gap-4 flex-wrap">
-          <a
-            href="mailto:sonyseptian1711@gmail.com"
-            class="contact-link"
-            ><i class="bi bi-envelope-fill"></i><span>sonyseptian1711@gmail.com</span></a
-          >
-          <a
-            href="https://www.linkedin.com/in/sony-septian"
-            target="_blank"
-            rel="noopener"
-            class="contact-link"
-            ><i class="bi bi-linkedin"></i><span>linkedin.com/in/sony-septian</span></a
-          >
-          <a
-            href="https://instagram.com/septians_17"
-            target="_blank"
-            rel="noopener"
-            class="contact-link"
-            ><i class="bi bi-instagram"></i><span>instagram.com/septians_17</span></a
-          >
-          <a
-            href="https://github.com/shosst17"
-            target="_blank"
-            rel="noopener"
-            class="contact-link"
-            ><i class="bi bi-github"></i><span>github.com/sony-septian</span></a
-          >
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-black text-white text-center py-3">
-      <div class="container">
-        <p class="mb-0">
-          <small>&copy; <span id="year"></span> Sony Septian. All rights reserved.</small>
-        </p>
-      </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ duration: 700, once: true });
+      AOS.init({ duration: 800, once: true, offset: 50 });
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // LOGIKA JAVASCRIPT UNTUK MODAL SERTIFIKAT BARU
-      document.addEventListener('DOMContentLoaded', function () {
-        const certModalImg = document.getElementById('certModalImg');
-
-        // Seleksi semua tautan sertifikat yang sudah ditambahkan class 'certificate-link'
-        const certificateLinks = document.querySelectorAll('#certificate a.certificate-link');
-
-        certificateLinks.forEach((link) => {
-          link.addEventListener('click', function (event) {
-            event.preventDefault(); // Mencegah perilaku default tautan
-
-            // Ambil sumber gambar dari atribut data-img-src
-            const imageSrc = this.getAttribute('data-img-src');
-
-            // Setel sumber gambar modal
-            certModalImg.src = imageSrc;
-          });
-        });
+      // Modal Image Logic
+      const certModal = document.getElementById('certModal');
+      const certModalImg = document.getElementById('certModalImg');
+      certModal.addEventListener('show.bs.modal', function (event) {
+        const triggerLink = event.relatedTarget.closest('a');
+        const imgSrc = triggerLink.getAttribute('data-img-src');
+        certModalImg.src = imgSrc;
       });
     </script>
   </body>
